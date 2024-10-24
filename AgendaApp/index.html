@@ -8,6 +8,17 @@
   </head>
   <body>
     <div class="container">
+      <button id="trashButton" onclick="openTrash()">
+        <img src="images/trash.png" height="15px" width="15px" />
+      </button>
+      <div class="trashList">
+        <h2>Trash List</h2>
+        <ul id="trash-container"></ul>
+        <button id="clearTrashButton" onclick="clearTrash()">
+          Clear Trash
+        </button>
+        <button id="trashClose" onclick="closeTrash()">Close Trash</button>
+      </div>
       <div class="todo-app">
         <h2>To-Do List <img src="images/icon.png" alt="" /></h2>
         <div class="row">
@@ -15,6 +26,7 @@
           <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container"></ul>
+        <button id="clearButton" onclick="clearTasks()">Clear Tasks</button>
       </div>
     </div>
     <script src="script.js"></script>
